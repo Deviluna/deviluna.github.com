@@ -56,16 +56,16 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-color: #12E7DF;
+  background-image: linear-gradient(120deg, #2495A9, #12E7DF); }
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 5rem 6rem; } }
+    padding: 4rem 2rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
-    padding: 3rem 4rem; } }
+    padding: 3rem 3rem; } }
 
 @media screen and (max-width: 42em) {
   .page-header {
@@ -243,3 +243,29 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+.nav ul{
+    margin:0 auto;   
+    width:50rem;   
+    height:0rem;   
+}
+.nav ul li{
+	
+	list-style-type:none;
+	float:left;
+	margin-top:1rem;
+}
+.nav ul li a{
+	width:8rem;
+	height:2rem;
+	line-height:2rem;
+	color:#FFF;
+	margin-left: 2rem;
+	display:block;
+	text-align:center;
+	font-size:1.6rem;
+	text-decoration:none;
+}
+.nav ul li a:hover{
+
+color:red;
+}
