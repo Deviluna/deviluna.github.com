@@ -308,12 +308,8 @@ width:8rem;
 	font-size:1.2rem; 
 	} }
 
-.nav ul li ul{
-	display:none;
-	width:10rem;   
 
-}
-.nav ul li:hover ul{
-display:block;
+.nav ul li a:hover{
+
 color:red;
 }
