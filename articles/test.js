@@ -61,3 +61,25 @@ function mouseOut()
 {
 	document.getElementById("testP").innerHTML = "鼠标不在这里";
 }
+var second=0; 
+var minute=0; 
+var hour=0; 
+
+function interval() 
+{ 
+second++; 
+if(second==60) 
+{ 
+second=0;minute+=1; 
+} 
+if(minute==60) 
+{ 
+minute=0;hour+=1; 
+} 
+document.getElementById("timeP").innerHTML  = hour+"时"+minute+"分"+second+"秒"; 
+setTimeout("interval();",1000); 
+} 
+function pageStart(){
+	checkCookie();
+	setTimeout(interval, 1000 );
+}
