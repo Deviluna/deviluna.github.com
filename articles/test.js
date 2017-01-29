@@ -51,12 +51,4 @@ function checkCookie()
 username=getCookie('username')
 if (username!=null && username!="")
 	document.getElementById("p3").innerHTML = username;
-/*else 
-  {
-  username=prompt('Please enter your name:',"")
-  if (username!=null && username!="")
-    {
-    setCookie('username',username,365)
-    }
-  }*/
 }
