@@ -1,13 +1,13 @@
-function hello(){
+﻿function hello(){
 	alert("hello");
 	
 }
 function add(){
 
-	var ipt1 = document.getElementById('input1');//��ȡinput�Ľڵ�
-   var v1 = ipt1.value;//��ȡinput��ֵ
-   var ipt2 = document.getElementById('input2');//��ȡinput�Ľڵ�
-   var v2 = ipt2.value;//��ȡinput��ֵ
+	var ipt1 = document.getElementById('input1');//获取input的节点
+   var v1 = ipt1.value;//获取input的值
+   var ipt2 = document.getElementById('input2');//获取input的节点
+   var v2 = ipt2.value;//获取input的值
    var ans=parseInt(v1)+parseInt(v2);
    document.getElementById("p1").innerHTML = ans;
 	}
@@ -51,4 +51,13 @@ function checkCookie()
 username=getCookie('username')
 if (username!=null && username!="")
 	document.getElementById("p3").innerHTML = username;
+}
+
+function mouseOver()
+{
+	document.getElementById("testP").innerHTML = "鼠标就在这里";
+}
+function mouseOut()
+{
+	document.getElementById("testP").innerHTML = "鼠标不在这里";
 }
