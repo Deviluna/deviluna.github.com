@@ -13,7 +13,7 @@ function add(){
 	}
 	
 function sort(){
-	var str=document.getElementById('input3').value;
+	var str=document.getElementById('input3').value.trim();
 	var s=str.split(" ");
 	document.getElementById("p2").innerHTML = s.sort();
 }
