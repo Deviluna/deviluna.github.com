@@ -34,7 +34,7 @@ return unescape(document.cookie.substring(c_start,c_end))
 return ""
 }
 function clickCookie(){
-	username=document.getElementById('input1').value;
+	username=document.getElementById('input4').value;
 	setCookie('username',username,365)
 	checkCookie();
 }
