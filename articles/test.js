@@ -33,7 +33,11 @@ return unescape(document.cookie.substring(c_start,c_end))
 }
 return ""
 }
-
+function clickCookie(){
+	username=document.getElementById('input1').value;
+	setCookie('username',username,365)
+	checkCookie();
+}
 function setCookie(c_name,value,expiredays)
 {
 var exdate=new Date()
