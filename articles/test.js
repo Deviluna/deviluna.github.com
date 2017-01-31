@@ -11,11 +11,14 @@ function add(){
    var ans=parseInt(v1)+parseInt(v2);
    document.getElementById("p1").innerHTML = ans;
 	}
-	
+	function sortNumber(a, b)
+{
+return a - b
+}
 function sort(){
 	var str=document.getElementById('input3').value.trim();
 	var s=str.split(" ");
-	document.getElementById("p2").innerHTML = s.sort();
+	document.getElementById("p2").innerHTML = s.sort(sortNumber);
 }
 
 function getCookie(c_name)
